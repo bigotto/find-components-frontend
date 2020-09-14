@@ -1,0 +1,35 @@
+.home {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10%
+}
+
+.home form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.home img {
+    width: 400px;
+}
+
+.home input {
+    border-radius: 8px;
+    background-color: #e3e3e3;
+    margin-top: 20px;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    font-size: 16px;
+    text-shadow: none;
+    height: 30px;
+    width: 300px;
+    /* margin-right: 50%; */
+}
