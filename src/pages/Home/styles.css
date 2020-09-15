@@ -1,3 +1,7 @@
+* {
+    background-color: #F0F0F7;
+}
+
 .home {
     width: 100%;
     height: 100%;
@@ -21,7 +25,9 @@
 
 .home input {
     border-radius: 8px;
+    border: 2px solid #8c8f8d;
     background-color: #e3e3e3;
+
     margin-top: 20px;
     outline: none;
     display: flex;
@@ -31,5 +37,10 @@
     text-shadow: none;
     height: 30px;
     width: 300px;
+    transition: border 0.2s;
     /* margin-right: 50%; */
+}
+
+.home input:hover, input:focus{
+    border: 2px solid #2b3251;
 }

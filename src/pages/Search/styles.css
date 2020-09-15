@@ -1,0 +1,19 @@
+* {
+    background-color: #F0F0F7;
+}
+
+.content-search h1 {
+    color: #2b3251;
+    font-family: Roboto, sans-serif;
+    border-bottom: 1px solid #2b3251;
+    margin-bottom: 10px;
+}
+.message-info h2 {
+    color: #2b3251;
+    font-family: Roboto, sans-serif;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+
+
+}
