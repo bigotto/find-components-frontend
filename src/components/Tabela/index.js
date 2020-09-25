@@ -22,17 +22,19 @@ const StyledTableCell = withStyles((theme) => ({
   const StyledTableRow = withStyles((theme) => ({
     root: {
       '&:nth-of-type(odd)': {
-        backgroundColor: theme.palette.action.hover
+        backgroundColor: '#F0F0F7'
       },
     },
   }))(TableRow);
   
   const useStyles = makeStyles({
     container: {
-      maxHeight: "100vh"
+      maxHeight: "100vh",
+      backgroundColor: "#F0F0F7",
+      boxShadow: "none"
     }, 
     table: {
-        minWidth: 370,
+        minWidth: 360,
         alignItems: 'center',
         justifyContent: 'center',
         flexDirection: 'column',

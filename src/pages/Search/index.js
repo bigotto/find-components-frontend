@@ -25,8 +25,6 @@ export default function Search() {
     const [components, setComponents] = useState([]);
     const [loading, setLoading] = useState(true);
 
-    console.log(name);
-
     useEffect(() => {
        api.get('db', {
             params: {
@@ -43,25 +41,25 @@ export default function Search() {
         })
     }, []);
 
-    return (
-        (loading ? 
-            ( <div className={classes.root}>
+    if(loading){
+        return (
+            <div className={classes.root}>
                 <CircularProgress />
-              </div>)
-            : 
-            (
-                <div className="content-search">
+            </div>
+        )
+    } else {
+        return (
+            <div className="content-search">
                 <h1>Resultados</h1>
                 { (components.length === 0) ?
                     ( 
                     <div className="message-info">
-                        <h2>⚠ Nenhum componente encontrado</h2>                    
+                        <h2>⚠ Nenhum {name} encontrado</h2>                    
                     </div>
                     )
-                : <Tabela results = {components} /> 
+                    : <Tabela results = {components} /> 
                 }
-                </div>      
-            )
-        )        
-    );
-}
+            </div>      
+        )
+    }
+} 

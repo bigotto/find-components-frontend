@@ -28,6 +28,18 @@
     <title>Find Components</title>
   </head>
   <body>
+    <style>
+      body::-webkit-scrollbar {width: 7px; height: 0;}
+      body::-webkit-scrollbar-track {margin: 54px 0 53px}
+      body::-webkit-scrollbar-thumb {
+        background: rgba(0,0,0,0.0);
+        border-radius: 10px;
+        box-shadow: rgba(255,255,255,0.3) 0 0 0 1px;
+      }
+    body:hover::-webkit-scrollbar-thumb {background: rgba(0,0,0,0.45)}
+    body::-webkit-scrollbar-thumb:hover {background: rgba(0,0,0,0.55)}
+
+  </style>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <!--

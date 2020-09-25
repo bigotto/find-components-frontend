@@ -2,18 +2,40 @@
     background-color: #F0F0F7;
 }
 
+*::-webkit-scrollbar {
+    width: 7px; 
+    height: 0;
+}
+
+*::-webkit-scrollbar-track {
+    margin: 54px 0 53px
+}
+
+*::-webkit-scrollbar-thumb {
+        background: rgba(0,0,0,0.0);
+        border-radius: 10px;
+        box-shadow: rgba(240,240,247,0.3) 0 0 0 1px;
+}
+
+*:hover::-webkit-scrollbar-thumb {
+    background: rgba(0,0,0,0.45);
+}
+
+*::-webkit-scrollbar-thumb:hover {
+    background: rgba(0,0,0,0.55);
+}
+
 .content-search h1 {
     color: #2b3251;
     font-family: Roboto, sans-serif;
     border-bottom: 1px solid #2b3251;
     margin-bottom: 10px;
 }
+
 .message-info h2 {
     color: #2b3251;
     font-family: Roboto, sans-serif;
     display: flex;
     justify-content: center;
     margin-top: 40px;
-
-
 }
